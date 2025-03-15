@@ -1,0 +1,8 @@
+<configuration>
+    <theme>dark</theme>
+    <documentTitle>Automation Test Report</documentTitle>
+    <reportName>Automation Test Execution Report</reportName>
+    <encoding>utf-8</encoding>
+    <protocol>https</protocol>
+    <timestampFormat>dd MMM yyyy HH:mm:ss</timestampFormat>
+</configuration>
