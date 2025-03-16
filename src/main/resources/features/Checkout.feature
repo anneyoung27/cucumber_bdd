@@ -5,7 +5,7 @@ Feature: Proceed to checkout functionality feature
     When User verify that the login page is visible
 
   @Checkout
-  Scenario: Proceed to checkout the product
+  Scenario Outline: Proceed to checkout the product
     And User enters username "standard_user"
     And User enters password "secret_sauce"
     Then User click login button
@@ -15,5 +15,11 @@ Feature: Proceed to checkout functionality feature
     And User click on the shopping cart icon in the top right corner
     Then User click checkout button
     And User verify that the checkout page is visible
-    Then User write his information "firstname", "lastname", "zipCode"
+    Then User write his information <firstname>, <lastname>, <zipCode>
     And User click continue button to proceed the checkout
+    Then User verify that the Checkout preview page is visible
+    And User click finish button to checkout the product
+
+    Examples:
+      | firstname      | lastname | zipCode |
+      | Injas Mahendra | Berutu   | 12399   |

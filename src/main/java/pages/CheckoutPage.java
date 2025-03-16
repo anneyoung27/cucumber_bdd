@@ -32,6 +32,10 @@ public class CheckoutPage extends DriverManager {
 
     By continueToProceedCheckoutButton = By.xpath("//input[@class='btn_primary cart_button']");
 
+    By checkoutOverviewLabel = By.xpath("//div[normalize-space(text())='Checkout: Overview']");
+
+    By checkoutFinishButton = By.xpath("//a[@class='btn_action cart_button']");
+
     public void clickCheckoutButton(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
@@ -42,7 +46,7 @@ public class CheckoutPage extends DriverManager {
     public String verifyIfCheckoutPageIsVisible(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutPageLabel));
-        log.info("Retrieved product label: '{}'", checkoutPageLabel.toString());
+        log.info("Retrieved product label in checkout information: '{}'", checkoutPageLabel.toString());
         return checkoutHeader.getText();
     }
 
@@ -67,5 +71,20 @@ public class CheckoutPage extends DriverManager {
     public void clickContinueButton(){
         driver.findElement(continueToProceedCheckoutButton).click();
     }
+
+    public void verifyIfCheckoutOverviewPageIsVisible(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+        WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutOverviewLabel));
+        log.info("Retrieved product label in checkout overview: '{}'", checkoutOverviewLabel.toString());
+        checkoutHeader.getText();
+    }
+
+    public void clickFinishButton(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+        WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutFinishButton));
+        checkoutBtn.click();
+        log.info("Checkout finish button clicked successfully: {}", checkoutFinishButton.toString());
+    }
+
 
 }

@@ -10,8 +10,8 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {
                 "html:target/cucumber-reports/cucumber-html-report.html",
                 "json:target/cucumber-reports/cucumber.json",
-                "pretty",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "pretty"
         },
         monochrome = true)
 public class TestRunner extends AbstractTestNGCucumberTests {
