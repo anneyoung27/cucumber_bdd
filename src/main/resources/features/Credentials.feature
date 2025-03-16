@@ -1,5 +1,5 @@
 @Login
-Feature: Login valid feature
+Feature: Credentials valid feature
   Background:
     Given User navigates to the sauce demo website
     When User verify that the login page is visible
