@@ -29,7 +29,7 @@ public class DriverManager {
         if (driver == null) {
             try {
                 fis = new FileInputStream(
-                        System.getProperty("user.dir") + "\\src\\test\\resources\\config\\config.properties");
+                        System.getProperty("user.dir") + "\\src\\main\\resources\\config\\config.properties");
                 log.info("config.properties file has been found");
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
@@ -82,7 +82,7 @@ public class DriverManager {
     public static void tearDown(){
         if (driver != null){
             driver.quit();
-            log.info("Browser closed");
+            driver = null; // set driver to null after quit
         }
     }
 }
