@@ -33,7 +33,7 @@ public class Hooks extends DriverManager {
                 scenario.attach(screenshot, "image/png", "Failed Test Screenshot");
 
                 // Save Screenshot ke `target/screenshots/`
-                Path screenshotDir = Paths.get("target/extent-reports", "screenshots");
+                Path screenshotDir = Paths.get("test-output/", "screenshots");
                 Files.createDirectories(screenshotDir);
                 String screenshotName = "screenshot_" + UUID.randomUUID() + ".png";
                 Path screenshotPath = screenshotDir.resolve(screenshotName);
