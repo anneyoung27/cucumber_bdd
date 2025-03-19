@@ -38,7 +38,7 @@ public class LoginPage extends DriverManager {
             log.info("Opening SauceDemo login page..");
             log.info("{} element is visible", loginPageIsVisible.toString());
         }else{
-            log.error("{} element has not found", loginPageIsVisible.toString());
+            log.warn("{} element has not found", loginPageIsVisible.toString());
         }
     }
 
@@ -48,7 +48,7 @@ public class LoginPage extends DriverManager {
         String userNameValue = Optional.ofNullable(user_name.getDomAttribute("value")).orElse("");
 
         if (userNameValue.isEmpty()){
-            log.info("Username field is empty");
+            log.warn("Username field is empty");
             return true;
         }else {
             log.info("Username field is not empty");
@@ -62,7 +62,7 @@ public class LoginPage extends DriverManager {
         String passwordValue = Optional.ofNullable(pass_word.getDomAttribute("value")).orElse("");
 
         if (passwordValue.isEmpty()){
-            log.info("Password field is empty");
+            log.warn("Password field is empty");
             return true;
         }else {
             log.info("Password field is not empty");

@@ -31,9 +31,8 @@ public class Hooks extends DriverManager {
 
                 // Capture Screenshot
                 byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenshot, "image/png", "Failed Test Screenshot");
 
-                // Save Screenshot ke `target/screenshots/`
+                // Save Screenshot to `target/screenshots/`
                 Path screenshotDir = Paths.get("test-output/", "screenshots");
                 Files.createDirectories(screenshotDir);
 

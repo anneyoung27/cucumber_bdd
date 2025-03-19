@@ -16,7 +16,7 @@ Feature: Login feature
   Scenario: User can't login if don't fill password
     When User type "standard_user" in username field
     When User click login button
-    Then User should see an error message "Epic sadface: Username is required"
+    Then User should see an error message "Epic sadface: Password is required"
 
   Scenario Outline: User can login with a valid credentials
     When User type "<username>" in username field
