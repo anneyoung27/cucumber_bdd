@@ -11,7 +11,8 @@ import utils.DriverManager;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.UUID;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Hooks extends DriverManager {
 
@@ -35,8 +36,12 @@ public class Hooks extends DriverManager {
                 // Save Screenshot ke `target/screenshots/`
                 Path screenshotDir = Paths.get("test-output/", "screenshots");
                 Files.createDirectories(screenshotDir);
-                String screenshotName = "screenshot_" + UUID.randomUUID() + ".png";
+
+                String fileName = "screenshot_" + new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+
+                String screenshotName = "screenshot_" + fileName + ".png";
                 Path screenshotPath = screenshotDir.resolve(screenshotName);
+
                 Files.write(screenshotPath, screenshot);
 
                 scenario.log("📸 Screenshot saved: " + screenshotPath.toAbsolutePath());

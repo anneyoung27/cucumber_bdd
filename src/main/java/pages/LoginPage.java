@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.DriverManager;
 
 import java.time.Duration;
+import java.util.Optional;
 
 public class LoginPage extends DriverManager {
     WebDriver driver;
@@ -30,11 +31,42 @@ public class LoginPage extends DriverManager {
 
     By productLabel = By.xpath("//div[@class='product_label']");
 
+    By errorMessage = By.xpath("//h3[@data-test='error']");
+
     public void loginPageIsVisible(){
         if(driver.findElement(loginPageIsVisible).isDisplayed()){
+            log.info("Opening SauceDemo login page..");
             log.info("{} element is visible", loginPageIsVisible.toString());
         }else{
             log.error("{} element has not found", loginPageIsVisible.toString());
+        }
+    }
+
+    public boolean isUserNameEmpty(){
+        WebElement user_name = driver.findElement(userName);
+        // get value of the input field
+        String userNameValue = Optional.ofNullable(user_name.getDomAttribute("value")).orElse("");
+
+        if (userNameValue.isEmpty()){
+            log.info("Username field is empty");
+            return true;
+        }else {
+            log.info("Username field is not empty");
+            return false;
+        }
+    }
+
+    public boolean isPasswordEmpty(){
+        WebElement pass_word = driver.findElement(password);
+        // get value of the input field
+        String passwordValue = Optional.ofNullable(pass_word.getDomAttribute("value")).orElse("");
+
+        if (passwordValue.isEmpty()){
+            log.info("Password field is empty");
+            return true;
+        }else {
+            log.info("Password field is not empty");
+            return false;
         }
     }
 
@@ -68,6 +100,23 @@ public class LoginPage extends DriverManager {
         }
 
         return productText;
+    }
+
+    public String getErrorMessage(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+
+        log.info("Waiting for error message label to be visible: {}", errorMessage.toString());
+        WebElement labelElement = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage));
+
+        String errorMessageText = labelElement.getText().trim();
+
+        if (errorMessageText.isEmpty()) {
+            log.warn("Error message label is visible but text is empty!");
+        } else {
+            log.info("Retrieved error message label: '{}'", errorMessageText);
+        }
+
+        return errorMessageText;
     }
 
 }

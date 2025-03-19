@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 16, 2025 10:22:00 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 19, 2025 08:14:02 PM</span></a>
 </li>
 </ul>
 </div>
@@ -52,9 +52,9 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 </ul>
@@ -66,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 16, 2025 10:22:00 PM</h3>
+<h3>Mar 19, 2025 08:14:02 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 16, 2025 10:22:08 PM</h3>
+<h3>Mar 19, 2025 08:14:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='25%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,9 +143,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>43</b> steps passed</small></div>
+<div><small data-tooltip='96%'><b>27</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='3%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -162,43 +162,10 @@
 </div></div>
 <script>
 var timeline = {
-"Proceed to checkout functionality feature":3.738,"Credentials valid feature":1.599,"Add Product functionality feature":2.219
+"Login feature":7.671
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@AddProduct</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Login</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Checkout</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -230,19 +197,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 3,
-failChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 43,
-failGrandChild: 0,
+passGrandChild: 27,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -258,39 +225,33 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@AddProduct</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@Checkout</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Proceed to checkout functionality feature</p>
+            <p class="name">Login feature</p>
             <p class="text-sm">
-              <span>10:22:00 PM</span> / <span>00:00:03:738</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:14:02 PM</span> / <span>00:00:07:671</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Proceed to checkout functionality feature</h5>
-<span class='badge badge-success'>03.16.2025 10:22:00 PM</span>
-<span class='badge badge-danger'>03.16.2025 10:22:04 PM</span>
-<span class='badge badge-default'>00:00:03:738</span>
+<h5 class="test-status text-fail">Login feature</h5>
+<span class='badge badge-success'>03.19.2025 8:14:02 PM</span>
+<span class='badge badge-danger'>03.19.2025 8:14:10 PM</span>
+<span class='badge badge-default'>00:00:07:671</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -303,102 +264,234 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Proceed to checkout the product</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can't login if don't fill username and password
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>When User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Username is required"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
+      <div>✅ Test passed: User can't login if don't fill username and password
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can't login if don't fill username
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
+                <span>When User type "secret_sauce" in password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>When User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Username is required"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
+      <div>✅ Test passed: User can't login if don't fill username
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>User can't login if don't fill password</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can't login if don't fill password
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
+                <span>When User type "standard_user" in username field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>When User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Username is required"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [Epic sadface: Username is required] but found [Epic sadface: Password is required]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepsDefinition.LoginSteps.user_should_see_an_error_message(LoginSteps.java:32)
+	at ✽.User should see an error message "Epic sadface: Username is required"(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Login.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
+      <div>❌ Test failed: User can't login if don't fill password
+      </div>
+      <div>❌ Test failed, capturing screenshot...
+      </div>
+      <div>Failed Test Screenshot
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Proceed to checkout the product</div>
+                  <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: Proceed to checkout the product
+      <div>Starting test: User can login with a valid credentials
       </div>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Given User navigates to the sauce demo website</span>
+                    <span>Given SauceDemo login page is open</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When User verify that the login page is visible</span>
+                    <span>And login fields are empty</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And User enters username "standard_user"</span>
+                    <span>When User type "standard_user" in username field</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And User enters password "secret_sauce"</span>
+                    <span>And User type "secret_sauce" in password field</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then User click login button</span>
+                    <span>When User click login button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And User should see "Products" page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User verify that the product page is visible</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click add to cart button on the first product</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click on the shopping cart icon in the top right corner</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User click checkout button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User verify that the checkout page is visible</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User write his information Injas Mahendra, Berutu, 12399</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click continue button to proceed the checkout</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User verify that the Checkout preview page is visible</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click finish button to checkout the product</span>
+                    <span>Then User successfully logs in and redirected to the Home page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
                     <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: Proceed to checkout the product
+      <div>✅ Test passed: User can login with a valid credentials
       </div>
       <div>🛑 WebDriver session closed.
       </div>
@@ -407,232 +500,6 @@ eventsCount: 5,
                   </div>
               </div>
             </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="21"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Credentials valid feature</p>
-            <p class="text-sm">
-              <span>10:22:04 PM</span> / <span>00:00:01:599</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Credentials valid feature</h5>
-<span class='badge badge-success'>03.16.2025 10:22:04 PM</span>
-<span class='badge badge-danger'>03.16.2025 10:22:06 PM</span>
-<span class='badge badge-default'>00:00:01:599</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>User login</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User login
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_navigates_to_the_sauce_demo_website()">
-                <span>Given User navigates to the sauce demo website</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_verify_that_the_login_page_is_visible()">
-                <span>When User verify that the login page is visible</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_navigates_to_the_sauce_demo_website()">
-                <span>Given User navigates to the sauce demo website</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_verify_that_the_login_page_is_visible()">
-                <span>When User verify that the login page is visible</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_enters_username(java.lang.String)">
-                <span>And User enters username "standard_user"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_enters_password(java.lang.String)">
-                <span>And User enters password "secret_sauce"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_click_login_button()">
-                <span>Then User click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_should_see_product_page(java.lang.String)">
-                <span>And User should see "Products" page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: User login
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="33"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Add Product functionality feature</p>
-            <p class="text-sm">
-              <span>10:22:06 PM</span> / <span>00:00:02:219</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Add Product functionality feature</h5>
-<span class='badge badge-success'>03.16.2025 10:22:06 PM</span>
-<span class='badge badge-danger'>03.16.2025 10:22:08 PM</span>
-<span class='badge badge-default'>00:00:02:219</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Add Product functionality</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>stepsDefinition.Hooks.driverSetUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: Add Product functionality
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_navigates_to_the_sauce_demo_website()">
-                <span>Given User navigates to the sauce demo website</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_verify_that_the_login_page_is_visible()">
-                <span>When User verify that the login page is visible</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_enters_username(java.lang.String)">
-                <span>And User enters username "standard_user"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_enters_password(java.lang.String)">
-                <span>And User enters password "secret_sauce"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_click_login_button()">
-                <span>Then User click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginValidSteps.user_should_see_product_page(java.lang.String)">
-                <span>And User should see "Products" page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductToCartSteps.userVerifyThatTheProductPageIsVisible()">
-                <span>Then User verify that the product page is visible</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductToCartSteps.userClickAddToCartButtonOnTheFirstProduct()">
-                <span>And User click add to cart button on the first product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductToCartSteps.userClickOnTheShoppingCartIconInTheTopRightCorner()">
-                <span>And User click on the shopping cart icon in the top right corner</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductToCartSteps.userVerifyThatAddedProductIsExistsInTheCart()">
-                <span>And User verify that added product is exists in the cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.AddMoreProductSteps.user_click_continue_shopping_button_to_add_more_product()">
-                <span>Then User click continue shopping button to add more product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.AddMoreProductSteps.user_click_second_product_to_cart()">
-                <span>And User click second product to cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.AddMoreProductSteps.user_click_shopping_cart()">
-                <span>And User click shopping cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.RemoveAddedItemFromCartSteps.user_click_remove_button_that_added_product_in_the_cart()">
-                <span>And User click remove button that added product in the cart</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepsDefinition.Hooks.quitDriver(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: Add Product functionality
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
         </div>
   </div>
 </div>
@@ -647,26 +514,26 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@AddProduct</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@AddProduct</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -677,85 +544,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:22:06 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:14:08 PM</td>
 <td>
-<a href="#" class="linked" test-id='33' id='34'>Add Product functionality</a>
+<a href="#" class="linked" test-id='1' id='23'>Then User should see an error message "Epic sadface: Username is required"</a>
 <div class="">
-<span class="badge badge-default">Add Product functionality feature.Add Product functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Login</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Login</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:22:04 PM</td>
-<td>
-<a href="#" class="linked" test-id='21' id='22'>User login</a>
-<div class="">
-<span class="badge badge-default">Credentials valid feature.User login</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Checkout</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Checkout</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:22:00 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Proceed to checkout the product</a>
-<div class="">
-<span class="badge badge-default">Proceed to checkout functionality feature.Proceed to checkout the product</span>
+<span class="badge badge-default">Login feature.User can't login if don't fill password.Then User should see an error message "Epic sadface: Username is required"</span>
 </div>
 </td>
 </tr>
