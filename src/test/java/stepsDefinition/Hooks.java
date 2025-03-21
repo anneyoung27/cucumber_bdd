@@ -6,31 +6,35 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import utils.DriverManager;
+import factory.DriverFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Hooks extends DriverManager {
-
-    @Before
-    public void driverSetUp(Scenario scenario){
+public class Hooks {
+    @Before (order = 0)
+    public void getScenarioName(Scenario scenario){
         ExtentCucumberAdapter.addTestStepLog("Starting test: " + scenario.getName());
-        setUp();
     }
 
-    @After
-    public void quitDriver(Scenario scenario){
+    @Before (order = 1)
+    public void setUp(Scenario scenario){
+        DriverFactory.driverSetUp();
+    }
+
+    @After(order = 0)
+    public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
             try {
                 ExtentCucumberAdapter.addTestStepLog("❌ Test failed: " + scenario.getName());
                 scenario.log("❌ Test failed, capturing screenshot...");
 
                 // Capture Screenshot
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                byte[] screenshot = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.BYTES);
 
                 // Save Screenshot to `target/screenshots/`
                 Path screenshotDir = Paths.get("test-output/", "screenshots");
@@ -43,16 +47,14 @@ public class Hooks extends DriverManager {
 
                 Files.write(screenshotPath, screenshot);
 
-                scenario.log("📸 Screenshot saved: " + screenshotPath.toAbsolutePath());
-
+                scenario.log("📸 Screenshot saved at: " + screenshotPath.toAbsolutePath());
             } catch (Exception e) {
                 ExtentCucumberAdapter.addTestStepLog("⚠️ Failed to capture screenshot: " + e.getMessage());
             }
         } else {
             ExtentCucumberAdapter.addTestStepLog("✅ Test passed: " + scenario.getName());
         }
-
-        tearDown();
+        DriverFactory.tearDown();
         ExtentCucumberAdapter.addTestStepLog("🛑 WebDriver session closed.");
     }
 }

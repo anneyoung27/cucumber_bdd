@@ -1,19 +1,22 @@
 package stepsDefinition;
 
+import factory.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
+import pages.ProductPage;
 import pages.LoginPage;
-import utils.DriverManager;
 
-public class LoginSteps extends DriverManager {
+public class LoginSteps{
     LoginPage loginPage;
+    ProductPage productPage;
 
     @Given("SauceDemo login page is open")
     public void saucedemo_login_page_is_open() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(DriverFactory.getDriver());
+        productPage = new ProductPage(DriverFactory.getDriver());
     }
 
     @And("login fields are empty")
@@ -42,8 +45,9 @@ public class LoginSteps extends DriverManager {
         loginPage.inputPassword(password);
     }
 
-    @Then("User successfully logs in and redirected to the Home page")
-    public void user_successfully_logs_in_and_redirected_to_the_home_page() {
-        System.out.println("HOME PAGE");
+    @Then("User successfully logs in and redirected to the {string} page")
+    public void user_successfully_logs_in_and_redirected_to_the_product_page(String page) {
+        String actualProductPage = productPage.productPageIsVisible();
+        Assert.assertEquals(actualProductPage, page);
     }
 }

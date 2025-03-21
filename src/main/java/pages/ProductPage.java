@@ -7,34 +7,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.DriverManager;
+import factory.DriverFactory;
 
 import java.time.Duration;
 import java.util.List;
 
-public class HomePage extends DriverManager {
+public class ProductPage extends DriverFactory {
     WebDriver driver;
-
     public static Logger log = LogManager.getLogger();
 
-    public HomePage(WebDriver driver){
+    // 1. Constructor of the page class
+    public ProductPage(WebDriver driver){
         this.driver = driver;
     }
 
+    // 2. By locators
+    By productPageLabel = By.xpath("//div[@class='product_label']");
     By allProductsIsVisible = By.xpath("//div[@class='inventory_item']");
-
     By addProduct1 = By.xpath("//div[@class='inventory_list']//div[1]//div[3]//button[1]");
-
     By cartButton = By.xpath("//a[contains(@class,'shopping_cart_link fa-layers')]");
-
     By itemsInCart = By.cssSelector(".cart_item");
-
     By continueShoppingButton = By.xpath("//a[normalize-space()='Continue Shopping']");
-
     By addProduct2 = By.xpath("//body[@class='main-body']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='inventory_container']/div/div[@id='inventory_container']/div[@class='inventory_list']/div[2]/div[3]/button[1]");
-
     By removeButton = By.xpath("//div[text()='29.99']/following-sibling::button");
 
+    // 3. Page actions: features(behavior) of the page the form of methods
     public void verifyIfProductsIsLoaded(){
         List<WebElement> products = driver.findElements(allProductsIsVisible);
 
@@ -100,6 +97,19 @@ public class HomePage extends DriverManager {
         log.info("'REMOVE' button clicked successfully: {}", removeButton.toString());
     }
 
+    public String productPageIsVisible() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
 
+        log.info("Waiting for product page label to be visible: {}", productPageLabel.toString());
 
+        WebElement labelElement = wait.until(ExpectedConditions.visibilityOfElementLocated(productPageLabel));
+
+        String labelText = labelElement.getText().trim();
+        if (labelText.isEmpty()) {
+            log.warn("Product page label is visible but text is empty!");
+        } else {
+            log.info("Retrieved product page label: '{}'", labelText);
+        }
+        return labelText;
+    }
 }

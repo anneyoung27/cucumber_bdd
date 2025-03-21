@@ -7,32 +7,29 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.DriverManager;
+import factory.DriverFactory;
 
 import java.time.Duration;
 import java.util.Optional;
 
-public class LoginPage extends DriverManager {
+public class LoginPage extends DriverFactory {
     WebDriver driver;
-
     public static Logger log = LogManager.getLogger();
 
+    // 1. Constructor of the page class
     public LoginPage(WebDriver driver){
         this.driver = driver;
     }
 
+    // 2. By locators
     By loginPageIsVisible = By.xpath("//div[@class='login_logo']");
-
     By userName = By.xpath("//input[@id='user-name']");
-
     By password = By.xpath("//input[@id='password']");
-
     By loginButton = By.xpath("//input[@id='login-button']");
-
     By productLabel = By.xpath("//div[@class='product_label']");
-
     By errorMessage = By.xpath("//h3[@data-test='error']");
 
+    // 3. Page actions: features(behavior) of the page the form of methods
     public void loginPageIsVisible(){
         if(driver.findElement(loginPageIsVisible).isDisplayed()){
             log.info("Opening SauceDemo login page..");
@@ -118,5 +115,4 @@ public class LoginPage extends DriverManager {
 
         return errorMessageText;
     }
-
 }

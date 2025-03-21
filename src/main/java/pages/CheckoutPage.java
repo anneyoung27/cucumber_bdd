@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.DriverManager;
+import factory.DriverFactory;
 
 import java.time.Duration;
 
-public class CheckoutPage extends DriverManager {
+public class CheckoutPage extends DriverFactory {
     WebDriver driver;
 
     public static Logger log = LogManager.getLogger();

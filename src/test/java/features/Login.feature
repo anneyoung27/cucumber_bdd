@@ -22,7 +22,7 @@ Feature: Login feature
     When User type "<username>" in username field
     And User type "<password>" in password field
     When User click login button
-    Then User successfully logs in and redirected to the Home page
+    Then User successfully logs in and redirected to the "Products" page
 
     Examples:
       | username      | password     |
