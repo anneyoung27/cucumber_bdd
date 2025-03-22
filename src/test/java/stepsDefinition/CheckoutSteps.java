@@ -36,17 +36,20 @@ public class CheckoutSteps {
     }
 
 
-    @And("User verifies that the order details and total amount are correct")
+    @And("User verifies that the order total amount are correct")
     public void userVerifiesThatTheOrderDetailsAndTotalAmountAreCorrect() {
-
+        double actualOrderedTotal = checkoutPage.getActualTotalValue();
+        Assert.assertEquals((checkoutPage.getSubTotalValue() + checkoutPage.getTaxValue()), actualOrderedTotal);
     }
 
     @And("User clicks the finish button to complete the checkout")
     public void userClicksTheFinishButtonToCompleteTheCheckout() {
-        
+        checkoutPage.clickFinishButton();
     }
 
     @Then("User should see a confirmation that the checkout was successful")
     public void userShouldSeeAConfirmationThatTheCheckoutWasSuccessful() {
+        String actualSuccessOrdered = checkoutPage.successConfirmationOrdered();
+        Assert.assertEquals(actualSuccessOrdered, "THANK YOU FOR YOUR ORDER");
     }
 }

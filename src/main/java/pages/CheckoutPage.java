@@ -22,8 +22,6 @@ public class CheckoutPage extends DriverFactory {
 
     By checkoutButton = By.xpath("//a[@class='btn_action checkout_button']");
 
-    By checkoutPageLabel = By.xpath("//div[@class='header_container']/following-sibling::div[1]");
-
     By first_name = By.xpath("(//input[@class='form_input'])[1]");
 
     By last_name = By.xpath("//input[@data-test='lastName']");
@@ -36,19 +34,21 @@ public class CheckoutPage extends DriverFactory {
 
     By checkoutFinishButton = By.xpath("//a[@class='btn_action cart_button']");
 
+    By successMessageLabel = By.xpath("//h2[normalize-space(text())='THANK YOU FOR YOUR ORDER']");
+
+    By subTotalElement = By.className("summary_subtotal_label");
+
+    By taxElement = By.className("summary_tax_label");
+
+    By totalValueElement = By.className("summary_total_label");
 
     public void clickCheckoutButton(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
-        checkoutBtn.click();
-        log.info("Checkout button clicked successfully: {}", checkoutButton.toString());
-    }
 
-    public String verifyIfCheckoutPageIsVisible(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
-        WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutPageLabel));
-        log.info("Retrieved product label in checkout information: '{}'", checkoutPageLabel.toString());
-        return checkoutHeader.getText();
+        checkoutBtn.click();
+
+        log.info("Checkout button clicked successfully: {}", checkoutButton.toString());
     }
 
     public void fillUserInformation(String firstName, String lastName, String zipCode){
@@ -70,18 +70,57 @@ public class CheckoutPage extends DriverFactory {
     }
 
     public void clickContinueToCheckoutButton(){
+        log.info("Clicking the 'Continue to Checkout' button");
         driver.findElement(continueToProceedCheckoutButton).click();
+        log.info("'Continue to Checkout' button clicked");
     }
 
     public String verifyIfCheckoutOverviewPageIsVisible(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutOverviewLabel));
 
-        return checkoutHeader.getText();
+        String headerText = checkoutHeader.getText();
+        log.info("Checkout Overview page is visible with header: '{}'", headerText);
+        return headerText;
     }
 
     public void clickFinishButton(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+        WebElement finishButton = wait.until(ExpectedConditions.elementToBeClickable(checkoutFinishButton));
 
+        log.info("Clicking the 'Finish' button");
+        finishButton.click();
+        log.info("'Finish' button clicked");
+    }
+
+    public String successConfirmationOrdered(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+        WebElement confirmationMessageLabel = wait.until(ExpectedConditions.visibilityOfElementLocated(successMessageLabel));
+
+        String confirmationText = confirmationMessageLabel.getText();
+        log.info("Order success message displayed: '{}'", confirmationText);
+        return confirmationText;
+    }
+
+    public double getTaxValue(){
+        String taxText = driver.findElement(taxElement).getText();
+        String taxValue = taxText.replace("Tax: $", "").trim();
+
+        return Double.parseDouble(taxValue);
+    }
+
+    public double getSubTotalValue(){
+        String subTotal = driver.findElement(subTotalElement).getText();
+        String subTotalValue = subTotal.replace("Item total: $", "").trim();
+
+        return Double.parseDouble(subTotalValue);
+    }
+
+    public double getActualTotalValue(){
+        String total = driver.findElement(totalValueElement).getText();
+        String totalValue = total.replace("Total: $", "").trim();
+
+        return Double.parseDouble(totalValue);
     }
 
 

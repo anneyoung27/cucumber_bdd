@@ -1,0 +1,15 @@
+[INFO] 22-03-2025 22:26:33 [main] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 22-03-2025 22:26:38 [main] [DriverFactory] - chrome browser has been selected
+[INFO] 22-03-2025 22:26:39 [main] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 22-03-2025 22:26:39 [main] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 22-03-2025 22:26:41 [main] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 22-03-2025 22:26:41 [main] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 22-03-2025 22:26:41 [main] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 22-03-2025 22:26:41 [main] [ProductPage] - User clicked 'Add to Cart' button for product: Sauce Labs Backpack
+[INFO] 22-03-2025 22:26:42 [main] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 22-03-2025 22:26:42 [main] [ProductPage] - Added product are visible
+[INFO] 22-03-2025 22:26:43 [main] [CheckoutPage] - Checkout button clicked successfully: By.xpath: //a[@class='btn_action checkout_button']
+[INFO] 22-03-2025 22:26:43 [main] [CheckoutPage] - First Name entered: Injas
+[INFO] 22-03-2025 22:26:43 [main] [CheckoutPage] - Last Name entered: Mahendra Berutu
+[INFO] 22-03-2025 22:26:44 [main] [CheckoutPage] - Zip Code entered: 99999
+[INFO] 22-03-2025 22:26:44 [main] [CheckoutPage] - ✔️ User information form filled successfully.
