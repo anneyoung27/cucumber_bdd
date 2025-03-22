@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import factory.DriverFactory;
@@ -17,46 +19,67 @@ public class ProductPage extends DriverFactory {
     public static Logger log = LogManager.getLogger();
 
     // 1. Constructor of the page class
-    public ProductPage(WebDriver driver){
+    public ProductPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     // 2. By locators
     By productPageLabel = By.xpath("//div[@class='product_label']");
     By allProductsIsVisible = By.xpath("//div[@class='inventory_item']");
-    By addProduct1 = By.xpath("//div[@class='inventory_list']//div[1]//div[3]//button[1]");
+
+    @FindBy(xpath = "//div[@class='inventory_item_name']")
+    static List<WebElement> listOfProductName;
+
     By cartButton = By.xpath("//a[contains(@class,'shopping_cart_link fa-layers')]");
     By itemsInCart = By.cssSelector(".cart_item");
-    By continueShoppingButton = By.xpath("//a[normalize-space()='Continue Shopping']");
-    By addProduct2 = By.xpath("//body[@class='main-body']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='inventory_container']/div/div[@id='inventory_container']/div[@class='inventory_list']/div[2]/div[3]/button[1]");
-    By removeButton = By.xpath("//div[text()='29.99']/following-sibling::button");
+    By removeButton = By.xpath("//button[@class='btn_secondary cart_button']");
 
     // 3. Page actions: features(behavior) of the page the form of methods
-    public void verifyIfProductsIsLoaded(){
+    public void verifyIfProductsIsLoaded() {
         List<WebElement> products = driver.findElements(allProductsIsVisible);
 
-        if (products.isEmpty()){
+        if (products.isEmpty()) {
             log.error("Products not found on Product page");
             return;
         }
 
-        for (WebElement product : products){
-            if (!product.isDisplayed()){
+        for (WebElement product : products) {
+            if (!product.isDisplayed()) {
                 log.info("One of the products is not visible on Product page");
             }
         }
         log.info("All products are successfully loaded and visible");
     }
 
-    public void clickAddProduct(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
-        WebElement labelElement = wait.until(ExpectedConditions.elementToBeClickable(addProduct1));
+    public void clickAddProduct(String productName) {
+        boolean productFound = false;
 
-        labelElement.click();
-        log.info("User clicked 'Add Product' button on Product Page: {}", addProduct1.toString());
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("inventory_item_name")));
+
+        for (WebElement product : listOfProductName) {
+            if (product.getText().equalsIgnoreCase("Sauce Labs Backpack")) {
+                productFound = true;
+                // Get "Add to Cart" button from parent
+                WebElement parentElement = product.findElement(By.xpath("./ancestor::div[contains(@class,'inventory_item')]"));
+
+                WebElement addToCartElement = wait.until(ExpectedConditions.elementToBeClickable(
+                        parentElement.findElement(By.xpath(".//button"))
+                ));
+
+                log.info("User clicked 'Add to Cart' button for product: {}", productName);
+
+                addToCartElement.click();
+                break;
+            }
+        }
+        if (!productFound){
+            log.warn("Product not found: {}", productName);
+        }
     }
 
-    public void clickCartButton(){
+    public void clickCartButton() {
         driver.findElement(cartButton).click();
         log.info("User clicked 'Cart' button, navigating to Cart Page: {}", cartButton.toString());
     }
@@ -65,14 +88,14 @@ public class ProductPage extends DriverFactory {
         List<WebElement> cart = driver.findElements(itemsInCart);
 
         if (cart.isEmpty()) {
-            log.error("Cart is empty! No products found!");
+            log.warn("Cart is empty! No products found!");
             return;
         }
 
         boolean allVisible = true;
         for (WebElement item : cart) {
             if (!item.isDisplayed()) {
-                log.error("Product not added on Cart page");
+                log.warn("Product not added on Cart page");
                 allVisible = false;
             }
         }
@@ -82,19 +105,17 @@ public class ProductPage extends DriverFactory {
         }
     }
 
-    public void clickContinueShoppingButton(){
-        driver.findElement(continueShoppingButton).click();
-        log.info("User clicked 'Continue Shopping' button, navigating to Product Page: {}", continueShoppingButton.toString());
-    }
+    public void clickRemoveButton() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
+        wait.until(ExpectedConditions.elementToBeClickable(removeButton));
 
-    public void clickAddProduct2(){
-        driver.findElement(addProduct2).click();
-        log.info("'Add Product' button clicked successfully: {}", addProduct2.toString());
-    }
-
-    public void clickRemoveButton(){
         driver.findElement(removeButton).click();
         log.info("'REMOVE' button clicked successfully: {}", removeButton.toString());
+    }
+
+    public int successfullyRemoved(){
+        List<WebElement> cart = driver.findElements(itemsInCart);
+        return cart.size();
     }
 
     public String productPageIsVisible() {

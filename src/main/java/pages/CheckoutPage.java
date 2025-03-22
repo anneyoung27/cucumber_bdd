@@ -36,6 +36,7 @@ public class CheckoutPage extends DriverFactory {
 
     By checkoutFinishButton = By.xpath("//a[@class='btn_action cart_button']");
 
+
     public void clickCheckoutButton(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
@@ -68,22 +69,19 @@ public class CheckoutPage extends DriverFactory {
         }
     }
 
-    public void clickContinueButton(){
+    public void clickContinueToCheckoutButton(){
         driver.findElement(continueToProceedCheckoutButton).click();
     }
 
-    public void verifyIfCheckoutOverviewPageIsVisible(){
+    public String verifyIfCheckoutOverviewPageIsVisible(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutOverviewLabel));
-        log.info("Retrieved product label in checkout overview: '{}'", checkoutOverviewLabel.toString());
-        checkoutHeader.getText();
+
+        return checkoutHeader.getText();
     }
 
     public void clickFinishButton(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
-        WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutFinishButton));
-        checkoutBtn.click();
-        log.info("Checkout finish button clicked successfully: {}", checkoutFinishButton.toString());
+
     }
 
 

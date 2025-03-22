@@ -16,17 +16,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Hooks {
-    @Before (order = 0)
-    public void getScenarioName(Scenario scenario){
-        ExtentCucumberAdapter.addTestStepLog("Starting test: " + scenario.getName());
-    }
 
-    @Before (order = 1)
+    @Before
     public void setUp(Scenario scenario){
+        ExtentCucumberAdapter.addTestStepLog("Starting test: " + scenario.getName());
         DriverFactory.driverSetUp();
     }
 
-    @After(order = 0)
+    @After
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()) {
             try {

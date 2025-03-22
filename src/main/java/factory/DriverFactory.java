@@ -75,7 +75,7 @@ public class DriverFactory {
     public static void tearDown() {
         if (getDriver() != null) {
             getDriver().quit();
-            driver.remove();
+            driver = null;
         }
     }
 }
