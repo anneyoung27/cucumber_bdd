@@ -129,7 +129,7 @@
                                 <include>**/TestRunner.java</include>
                             </includes>
                             <parallel>classes</parallel>
-                            <threadCount>4</threadCount>
+                            <threadCount>9</threadCount>
                         </configuration>
                     </execution>
                 </executions>
