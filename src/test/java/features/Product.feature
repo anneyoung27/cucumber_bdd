@@ -12,13 +12,13 @@ Feature: Product Feature
 
   Scenario: User can add the product and the added product is visible in the cart
     Then User successfully logs in and redirected to the "Products" page
-    When User clicks add to cart for the "Sauce Labs Backpack" product
+    When User clicks add to cart for the Sauce Labs Backpack product
     And User clicks the shopping cart icon in the top right corner
     Then The product was successfully added to the cart is visible in cart list
 
   Scenario: User want to remove product from the cart
     Then User successfully logs in and redirected to the "Products" page
-    When User clicks add to cart for the "Sauce Labs Backpack" product
+    When User clicks add to cart for the Sauce Labs Backpack product
     And User clicks the shopping cart icon in the top right corner
     And User clicks REMOVE button
     Then The product was successfully removed from the cart

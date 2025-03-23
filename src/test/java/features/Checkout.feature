@@ -8,7 +8,7 @@ Feature: Checkout Feature
 
   Scenario Outline: Verify that user can enter customer information for checkout
     Then User successfully logs in and redirected to the "Products" page
-    When User clicks add to cart for the "Sauce Labs Backpack" product
+    When User clicks add to cart for the Sauce Labs Backpack product
     And User clicks the shopping cart icon in the top right corner
     And The product was successfully added to the cart is visible in cart list
     When User clicks checkout button
@@ -22,7 +22,7 @@ Feature: Checkout Feature
 
   Scenario Outline: Verify that User can complete his checkout process
     Then User successfully logs in and redirected to the "Products" page
-    When User clicks add to cart for the "Sauce Labs Backpack" product
+    When User clicks add to cart for the Sauce Labs Backpack product
     And User clicks the shopping cart icon in the top right corner
     And The product was successfully added to the cart is visible in cart list
     When User clicks checkout button

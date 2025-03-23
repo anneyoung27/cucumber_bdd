@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 23, 2025 04:55:39 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 23, 2025 05:51:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 23, 2025 04:55:39 PM</h3>
+<h3>Mar 23, 2025 05:51:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 23, 2025 04:55:50 PM</h3>
+<h3>Mar 23, 2025 05:51:50 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='81%'><b>72</b> steps passed</small></div>
+<div><small data-tooltip='80%'><b>71</b> steps passed</small></div>
 <div>
 <small data-tooltip='3%'><b>3</b> steps failed,
-<b>13</b> skipped, <b data-tooltip='%'>0</b> others
+<b>14</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Product Feature":10.27,"Checkout Feature":7.881,"Login feature":10.89
+"Login feature":8.77,"Product Feature":11.249,"Checkout Feature":9.176
 };
 </script>
 <div class="row">
@@ -208,10 +208,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 72,
+passGrandChild: 71,
 failGrandChild: 3,
 warningGrandChild: 0,
-skipGrandChild: 13,
+skipGrandChild: 14,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -234,25 +234,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Product Feature</p>
+            <p class="name">Login feature</p>
             <p class="text-sm">
-              <span>4:55:40 PM</span> / <span>00:00:10:270</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:51:38 PM</span> / <span>00:00:08:770</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Product Feature</h5>
-<span class='badge badge-success'>03.23.2025 4:55:40 PM</span>
-<span class='badge badge-danger'>03.23.2025 4:55:50 PM</span>
-<span class='badge badge-default'>00:00:10:270</span>
+<h5 class="test-status text-pass">Login feature</h5>
+<span class='badge badge-success'>03.23.2025 5:51:38 PM</span>
+<span class='badge badge-danger'>03.23.2025 5:51:47 PM</span>
+<span class='badge badge-default'>00:00:08:770</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -265,14 +265,14 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User can add the product and the added product is visible in the cart</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username and password</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE">
                 <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User can add the product and the added product is visible in the cart
+      <div>Starting test: User can't login if don't fill username and password
       </div>
       <div>
       </div>
@@ -282,70 +282,24 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
-                <span>When User type "standard_user" in username field</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
-                <span>And User type "secret_sauce" in password field</span>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
-                <span>And User click login button</span>
+                <span>When User click login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_successfully_logs_in_and_redirected_to_the_product_page(java.lang.String)">
-                <span>Then User successfully logs in and redirected to the "Products" page</span>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Username is required"</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepsDefinition.ProductSteps.userClicksAddToCart(java.lang.String)">
-                <span>When User clicks add to cart for the "Sauce Labs Backpack" product</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=class name, value=inventory_item_name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60326/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.ProductPage.clickAddProduct(ProductPage.java:59)
-	at stepsDefinition.ProductSteps.userClicksAddToCart(ProductSteps.java:25)
-	at ✽.User clicks add to cart for the "Sauce Labs Backpack" product(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Product.feature:15)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepsDefinition.ProductSteps.userClicksShoppingCartIcon()">
-                <span>And User clicks the shopping cart icon in the top right corner</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepsDefinition.ProductSteps.productIsVisibleInCartList()">
-                <span>Then The product was successfully added to the cart is visible in cart list</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>❌ Test failed: User can add the product and the added product is visible in the cart
-      </div>
-      <div>❌ Test failed, capturing screenshot...
-      </div>
-      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_16-55-48.png
+      <div>✅ Test passed: User can't login if don't fill username and password
       </div>
       <div>🛑 WebDriver session closed.
       </div>
@@ -358,14 +312,14 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>User want to remove product from the cart</div>
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill password</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="BEFORE">
                 <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User want to remove product from the cart
+      <div>Starting test: User can't login if don't fill password
       </div>
       <div>
       </div>
@@ -375,72 +329,29 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
       <div>
       </div>
               </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
+      <div>
+      </div>
+              </div>
               <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
                 <span>When User type "standard_user" in username field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
-                <span>And User type "secret_sauce" in password field</span>
-      <div>
-      </div>
-              </div>
               <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
-                <span>And User click login button</span>
+                <span>When User click login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_successfully_logs_in_and_redirected_to_the_product_page(java.lang.String)">
-                <span>Then User successfully logs in and redirected to the "Products" page</span>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Password is required"</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.ProductSteps.userClicksAddToCart(java.lang.String)">
-                <span>When User clicks add to cart for the "Sauce Labs Backpack" product</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepsDefinition.ProductSteps.userClicksShoppingCartIcon()">
-                <span>And User clicks the shopping cart icon in the top right corner</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//a[contains(@class,'shopping_cart_link fa-layers')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60326/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pages.ProductPage.clickCartButton(ProductPage.java:83)
-	at stepsDefinition.ProductSteps.userClicksShoppingCartIcon(ProductSteps.java:30)
-	at ✽.User clicks the shopping cart icon in the top right corner(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Product.feature:22)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepsDefinition.ProductSteps.userClicksRemoveButton()">
-                <span>And User clicks REMOVE button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepsDefinition.ProductSteps.productIsRemovedFromCart()">
-                <span>Then The product was successfully removed from the cart</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>❌ Test failed: User want to remove product from the cart
-      </div>
-      <div>❌ Test failed, capturing screenshot...
-      </div>
-      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_16-55-50.png
+      <div>✅ Test passed: User can't login if don't fill password
       </div>
       <div>🛑 WebDriver session closed.
       </div>
@@ -453,7 +364,154 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>User can see products are loaded after login successful</div>
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can't login if don't fill username
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
+                <span>And login fields are empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
+                <span>When User type "secret_sauce" in password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>When User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
+                <span>Then User should see an error message "Epic sadface: Username is required"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>✅ Test passed: User can't login if don't fill username
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can login with a valid credentials
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And login fields are empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User type "standard_user" in username field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User type "secret_sauce" in password field</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User successfully logs in and redirected to the "Products" page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>✅ Test passed: User can login with a valid credentials
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Product Feature</p>
+            <p class="text-sm">
+              <span>5:51:38 PM</span> / <span>00:00:11:249</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Product Feature</h5>
+<span class='badge badge-success'>03.23.2025 5:51:38 PM</span>
+<span class='badge badge-danger'>03.23.2025 5:51:50 PM</span>
+<span class='badge badge-default'>00:00:11:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>User can see products are loaded after login successful</div>
       </div>
     </div>
         <div class="collapse">
@@ -507,17 +565,274 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
           </div>
         </div>
   </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>User can add the product and the added product is visible in the cart</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User can add the product and the added product is visible in the cart
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
+                <span>When User type "standard_user" in username field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
+                <span>And User type "secret_sauce" in password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>And User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_successfully_logs_in_and_redirected_to_the_product_page(java.lang.String)">
+                <span>Then User successfully logs in and redirected to the "Products" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepsDefinition.ProductSteps.userClicksAddToCart()">
+                <span>When User clicks add to cart for the Sauce Labs Backpack product</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [257e49e3a30dcbf4c6e24da4aa07a107, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60664/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 257e49e3a30dcbf4c6e24da4aa07a107
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.clickAddProduct(ProductPage.java:52)
+	at stepsDefinition.ProductSteps.userClicksAddToCart(ProductSteps.java:25)
+	at ✽.User clicks add to cart for the Sauce Labs Backpack product(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Product.feature:15)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:966)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
+	... 8 more
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.onReadError(Http1AsyncReceiver.java:516)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.ProductSteps.userClicksShoppingCartIcon()">
+                <span>And User clicks the shopping cart icon in the top right corner</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.ProductSteps.productIsVisibleInCartList()">
+                <span>Then The product was successfully added to the cart is visible in cart list</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>❌ Test failed: User can add the product and the added product is visible in the cart
+      </div>
+      <div>❌ Test failed, capturing screenshot...
+      </div>
+      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_17-51-47.png
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>User want to remove product from the cart</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
+      <div>Starting test: User want to remove product from the cart
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
+                <span>Given SauceDemo login page is open</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
+                <span>When User type "standard_user" in username field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
+                <span>And User type "secret_sauce" in password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
+                <span>And User click login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_successfully_logs_in_and_redirected_to_the_product_page(java.lang.String)">
+                <span>Then User successfully logs in and redirected to the "Products" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepsDefinition.ProductSteps.userClicksAddToCart()">
+                <span>When User clicks add to cart for the Sauce Labs Backpack product</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [257e49e3a30dcbf4c6e24da4aa07a107, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60664/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 257e49e3a30dcbf4c6e24da4aa07a107
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.clickAddProduct(ProductPage.java:52)
+	at stepsDefinition.ProductSteps.userClicksAddToCart(ProductSteps.java:25)
+	at ✽.User clicks add to cart for the Sauce Labs Backpack product(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Product.feature:21)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:966)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
+	... 8 more
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.onReadError(Http1AsyncReceiver.java:516)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.ProductSteps.userClicksShoppingCartIcon()">
+                <span>And User clicks the shopping cart icon in the top right corner</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.ProductSteps.userClicksRemoveButton()">
+                <span>And User clicks REMOVE button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepsDefinition.ProductSteps.productIsRemovedFromCart()">
+                <span>Then The product was successfully removed from the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>❌ Test failed: User want to remove product from the cart
+      </div>
+      <div>❌ Test failed, capturing screenshot...
+      </div>
+      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_17-51-47.png
+      </div>
+      <div>🛑 WebDriver session closed.
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="fail" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Checkout Feature</p>
             <p class="text-sm">
-              <span>4:55:40 PM</span> / <span>00:00:07:881</span>
+              <span>5:51:38 PM</span> / <span>00:00:09:176</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -526,10 +841,10 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Checkout Feature</h5>
-<span class='badge badge-success'>03.23.2025 4:55:40 PM</span>
-<span class='badge badge-danger'>03.23.2025 4:55:47 PM</span>
-<span class='badge badge-default'>00:00:07:881</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-success'>03.23.2025 5:51:38 PM</span>
+<span class='badge badge-danger'>03.23.2025 5:51:48 PM</span>
+<span class='badge badge-default'>00:00:09:176</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -541,14 +856,14 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Verify that user can enter customer information for checkout</div>
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verify that user can enter customer information for checkout</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Verify that user can enter customer information for checkout</div>
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Verify that user can enter customer information for checkout</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -585,7 +900,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When User clicks add to cart for the "Sauce Labs Backpack" product</span>
+                    <span>When User clicks add to cart for the Sauce Labs Backpack product</span>
       <div>
       </div>
                   </div>
@@ -635,14 +950,14 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Verify that User can complete his checkout process</div>
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Verify that User can complete his checkout process</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Verify that User can complete his checkout process</div>
+                  <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Verify that User can complete his checkout process</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -679,24 +994,24 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
       </div>
                   </div>
                   <div class="step fail-bg">
-                    <span>When User clicks add to cart for the "Sauce Labs Backpack" product</span>
+                    <span>When User clicks add to cart for the Sauce Labs Backpack product</span>
       <div>
         <textarea disabled class="code-block">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e9d5e4252198a9860aa30b8c584d2f9, findChildElement [using, id, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60326/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e9d5e4252198a9860aa30b8c584d2f9
+Command: [257e49e3a30dcbf4c6e24da4aa07a107, findElement [value, using]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\injas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60664/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 257e49e3a30dcbf4c6e24da4aa07a107
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:211)
-	at pages.ProductPage.clickAddProduct(ProductPage.java:68)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.ProductPage.clickAddProduct(ProductPage.java:52)
 	at stepsDefinition.ProductSteps.userClicksAddToCart(ProductSteps.java:25)
-	at ✽.User clicks add to cart for the "Sauce Labs Backpack" product(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Checkout.feature:25)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@1da51dd0 rejected from java.util.concurrent.ThreadPoolExecutor@1daacaae[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 129]
+	at ✽.User clicks add to cart for the Sauce Labs Backpack product(file:///D:/CodeProject/Java/MyProject/CucumberBDDProject/CucumberProject/src/test/java/features/Checkout.feature:25)
+Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
@@ -706,12 +1021,12 @@ Caused by: java.io.UncheckedIOException: java.io.IOException: Task jdk.internal.
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@1da51dd0 rejected from java.util.concurrent.ThreadPoolExecutor@1daacaae[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 129]
+Caused by: java.io.IOException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
 	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:966)
 	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
 	... 8 more
-Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@1da51dd0 rejected from java.util.concurrent.ThreadPoolExecutor@1daacaae[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 129]
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@48c6b715 rejected from java.util.concurrent.ThreadPoolExecutor@29e2b11d[Shutting down, pool size = 4, active threads = 4, queued tasks = 0, completed tasks = 185]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
@@ -789,7 +1104,7 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
       </div>
       <div>❌ Test failed, capturing screenshot...
       </div>
-      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_16-55-47.png
+      <div>📸 Screenshot saved at: D:\CodeProject\Java\MyProject\CucumberBDDProject\CucumberProject\test-output\screenshots\screenshot_screenshot_2025-03-23_17-51-47.png
       </div>
       <div>🛑 WebDriver session closed.
       </div>
@@ -798,252 +1113,6 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
                   </div>
               </div>
             </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login feature</p>
-            <p class="text-sm">
-              <span>4:55:40 PM</span> / <span>00:00:10:890</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login feature</h5>
-<span class='badge badge-success'>03.23.2025 4:55:40 PM</span>
-<span class='badge badge-danger'>03.23.2025 4:55:50 PM</span>
-<span class='badge badge-default'>00:00:10:890</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username and password</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User can't login if don't fill username and password
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
-                <span>Given SauceDemo login page is open</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
-                <span>And login fields are empty</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
-                <span>When User click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
-                <span>Then User should see an error message "Epic sadface: Username is required"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: User can't login if don't fill username and password
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>User can login with a valid credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User can login with a valid credentials
-      </div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given SauceDemo login page is open</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And login fields are empty</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User type "standard_user" in username field</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User type "secret_sauce" in password field</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User click login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User successfully logs in and redirected to the "Products" page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: User can login with a valid credentials
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill password</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User can't login if don't fill password
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
-                <span>Given SauceDemo login page is open</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
-                <span>And login fields are empty</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_username_field(java.lang.String)">
-                <span>When User type "standard_user" in username field</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
-                <span>When User click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
-                <span>Then User should see an error message "Epic sadface: Password is required"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: User can't login if don't fill password
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>User can't login if don't fill username</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="BEFORE">
-                <span>stepsDefinition.Hooks.setUp(io.cucumber.java.Scenario)</span>
-      <div>Starting test: User can't login if don't fill username
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.saucedemo_login_page_is_open()">
-                <span>Given SauceDemo login page is open</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.login_fields_are_empty()">
-                <span>And login fields are empty</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_type_in_password_field(java.lang.String)">
-                <span>When User type "secret_sauce" in password field</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_click_login_button()">
-                <span>When User click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepsDefinition.LoginSteps.user_should_see_an_error_message(java.lang.String)">
-                <span>Then User should see an error message "Epic sadface: Username is required"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepsDefinition.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>✅ Test passed: User can't login if don't fill username
-      </div>
-      <div>🛑 WebDriver session closed.
-      </div>
-      <div>
-      </div>
-              </div>
-          </div>
         </div>
   </div>
 </div>
@@ -1062,22 +1131,22 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>3</span>
 </span>
 <p class="name">org.openqa.selenium.remote.UnreachableBrowserException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.remote.UnreachableBrowserException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1090,57 +1159,31 @@ Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.ne
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:46 PM</td>
+<td>17:51:46 PM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='76'>When User clicks add to cart for the "Sauce Labs Backpack" product</a>
+<a href="#" class="linked" test-id='3' id='82'>When User clicks add to cart for the Sauce Labs Backpack product</a>
 <div class="">
-<span class="badge badge-default">Checkout Feature.Verify that User can complete his checkout process.When User clicks add to cart for the "Sauce Labs Backpack" product</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">org.openqa.selenium.NoSuchSessionException</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.NoSuchSessionException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:48 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='91'>When User clicks add to cart for the "Sauce Labs Backpack" product</a>
-<div class="">
-<span class="badge badge-default">Product Feature.User can add the product and the added product is visible in the cart.When User clicks add to cart for the "Sauce Labs Backpack" product</span>
+<span class="badge badge-default">Product Feature.User can add the product and the added product is visible in the cart.When User clicks add to cart for the Sauce Labs Backpack product</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:50 PM</td>
+<td>17:51:46 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='95'>And User clicks the shopping cart icon in the top right corner</a>
+<a href="#" class="linked" test-id='7' id='83'>When User clicks add to cart for the Sauce Labs Backpack product</a>
 <div class="">
-<span class="badge badge-default">Product Feature.User want to remove product from the cart.And User clicks the shopping cart icon in the top right corner</span>
+<span class="badge badge-default">Checkout Feature.Verify that User can complete his checkout process.When User clicks add to cart for the Sauce Labs Backpack product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:51:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='79'>When User clicks add to cart for the Sauce Labs Backpack product</a>
+<div class="">
+<span class="badge badge-default">Product Feature.User want to remove product from the cart.When User clicks add to cart for the Sauce Labs Backpack product</span>
 </div>
 </td>
 </tr>

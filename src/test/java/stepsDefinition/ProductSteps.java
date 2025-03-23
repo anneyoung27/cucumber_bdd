@@ -20,9 +20,9 @@ public class ProductSteps extends DriverFactory {
         productsPage.verifyIfProductsIsLoaded();
     }
 
-    @When("User clicks add to cart for the {string} product")
-    public void userClicksAddToCart(String product_name) {
-        productsPage.clickAddProduct(product_name);
+    @When("User clicks add to cart for the Sauce Labs Backpack product")
+    public void userClicksAddToCart() {
+        productsPage.clickAddProduct();
     }
 
     @When("User clicks the shopping cart icon in the top right corner")

@@ -7,10 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import static helper.PropertiesHelper.loadFile;
 
@@ -54,22 +57,27 @@ public class DriverFactory {
     }
 
     private static void initializeDriver() {
-        switch (setUp.getProperty("BROWSER").toLowerCase()) {
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver.set(new FirefoxDriver());
-                break;
-            case "chrome":
-                WebDriverManager.chromedriver().setup();
-                driver.set(new ChromeDriver());
-                break;
-            case "edge":
-                WebDriverManager.edgedriver().setup();
-                driver.set(new EdgeDriver());
-                break;
-            default:
-                throw new RuntimeException("Invalid browser specified in configuration: " + setUp.getProperty("BROWSER"));
+        try{
+            switch (setUp.getProperty("BROWSER").toLowerCase()) {
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver.set(new FirefoxDriver());
+                    break;
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver.set(new ChromeDriver());
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver.set(new EdgeDriver());
+                    break;
+                default:
+                    throw new RuntimeException("Invalid browser specified in configuration: " + setUp.getProperty("BROWSER"));
+            }
+        }catch (UnreachableBrowserException e){
+            log.error(e);
         }
+
         log.info("{} browser has been selected", setUp.getProperty("BROWSER"));
     }
 

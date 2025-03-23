@@ -21,15 +21,11 @@ public class ProductPage extends DriverFactory {
     // 1. Constructor of the page class
     public ProductPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
 
     // 2. By locators
     By productPageLabel = By.xpath("//div[@class='product_label']");
     By allProductsIsVisible = By.xpath("//div[@class='inventory_item']");
-
-    @FindBy(xpath = "//div[@class='inventory_item_name']")
-    static List<WebElement> listOfProductName;
 
     By cartButton = By.xpath("//a[contains(@class,'shopping_cart_link fa-layers')]");
     By itemsInCart = By.cssSelector(".cart_item");
@@ -52,31 +48,8 @@ public class ProductPage extends DriverFactory {
         log.info("All products are successfully loaded and visible");
     }
 
-    public void clickAddProduct(String productName) {
-        boolean productFound = false;
-
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("inventory_item_name")));
-
-        for (WebElement product : listOfProductName) {
-            if (product.getText().equalsIgnoreCase("Sauce Labs Backpack")) {
-                productFound = true;
-                // Get "Add to Cart" button from parent
-                WebElement parentElement = product.findElement(By.xpath("./ancestor::div[contains(@class,'inventory_item')]"));
-
-                WebElement addToCartElement = wait.until(ExpectedConditions.elementToBeClickable(
-                        parentElement.findElement(By.xpath(".//button"))
-                ));
-
-                log.info("User clicked 'Add to Cart' button for product: {}", productName);
-
-                addToCartElement.click();
-                break;
-            }
-        }
-        if (!productFound){
-            log.warn("Product not found: {}", productName);
-        }
+    public void clickAddProduct() {
+      driver.findElement(By.xpath("(//button[@class='btn_primary btn_inventory'])[1]")).click();
     }
 
     public void clickCartButton() {

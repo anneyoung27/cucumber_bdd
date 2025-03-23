@@ -208,3 +208,551 @@
 [INFO] 23-03-2025 16:55:50 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
 [INFO] 23-03-2025 16:55:50 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
 [INFO] 23-03-2025 16:55:50 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:58:59 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:02 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 16:59:03 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:03 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:03 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:03 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:03 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[WARN] 23-03-2025 16:59:05 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:05 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[WARN] 23-03-2025 16:59:05 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 16:59:06 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[WARN] 23-03-2025 16:59:07 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:07 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 16:59:08 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:08 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:08 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[WARN] 23-03-2025 16:59:11 [TestNG-PoolService-9] [ProductPage] - Product not found: Sauce Labs Backpack
+[INFO] 23-03-2025 16:59:12 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:12 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:12 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:12 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:12 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:50 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:53 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [ProductPage] - User clicked 'Add to Cart' button for product: Sauce Labs Backpack
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 16:59:54 [TestNG-PoolService-9] [ProductPage] - 'REMOVE' button clicked successfully: By.xpath: //button[@class='btn_secondary cart_button']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[WARN] 23-03-2025 16:59:55 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[WARN] 23-03-2025 16:59:55 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 16:59:55 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 16:59:55 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:55 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:56 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 16:59:57 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:40 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:01:42 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:42 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:42 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:01:43 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 17:01:44 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:01:44 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[WARN] 23-03-2025 17:01:45 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:45 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:46 [TestNG-PoolService-9] [ProductPage] - User clicked 'Add to Cart' button for product: Sauce Labs Backpack
+[WARN] 23-03-2025 17:01:46 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 17:01:46 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-9] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-9] [ProductPage] - 'REMOVE' button clicked successfully: By.xpath: //button[@class='btn_secondary cart_button']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:47 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:01:48 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 17:01:52 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:01:52 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:01:52 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:33 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:36 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:37 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:41:37 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:37 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:41:38 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-8] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-8] [ProductPage] - Added product are visible
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:41:38 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[WARN] 23-03-2025 17:41:39 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[WARN] 23-03-2025 17:41:39 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:39 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:41:40 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:41:40 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:41:41 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:44 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:46:46 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 17:46:47 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 17:46:47 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:46:47 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:48 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-2] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-2] [ProductPage] - Added product are visible
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:46:49 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-2] [CheckoutPage] - Checkout button clicked successfully: By.xpath: //a[@class='btn_action checkout_button']
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:46:49 [TestNG-PoolService-2] [CheckoutPage] - First Name entered: Injas
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-2] [CheckoutPage] - Last Name entered: Mahendra Berutu
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-2] [CheckoutPage] - Zip Code entered: 99999
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-2] [CheckoutPage] - User information form filled successfully.
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-2] [CheckoutPage] - Clicking the 'Continue to Checkout' button
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[WARN] 23-03-2025 17:46:50 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:46:50 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-2] [CheckoutPage] - 'Continue to Checkout' button clicked
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:51 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:46:52 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:46:52 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:46:52 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:47:01 [TestNG-PoolService-2] [CheckoutPage] - Checkout Overview page is visible with header: 'Checkout: Overview'
+[INFO] 23-03-2025 17:47:01 [TestNG-PoolService-2] [CheckoutPage] - Clicking the 'Finish' button
+[INFO] 23-03-2025 17:47:02 [TestNG-PoolService-2] [CheckoutPage] - 'Finish' button clicked
+[INFO] 23-03-2025 17:47:02 [TestNG-PoolService-2] [CheckoutPage] - Order success message displayed: 'THANK YOU FOR YOUR ORDER'
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:00 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:02 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 17:48:03 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 17:48:03 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:03 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:48:04 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:48:04 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[WARN] 23-03-2025 17:48:04 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:05 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:48:06 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 17:48:06 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:06 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:06 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:48:07 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:14 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:49:16 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 17:49:17 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:49:17 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:49:18 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:49:19 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 17:49:19 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:49:19 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[WARN] 23-03-2025 17:49:20 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:49:20 [TestNG-PoolService-9] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-1] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-1] [ProductPage] - Added product are visible
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:21 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:22 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:49:22 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:49:24 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:24 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:24 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:27 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:49:27 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:49:27 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:49:27 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
+[INFO] 23-03-2025 17:49:31 [TestNG-PoolService-9] [ProductPage] - 'REMOVE' button clicked successfully: By.xpath: //button[@class='btn_secondary cart_button']
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-1] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-8] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-3] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-5] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-9] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-6] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-4] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-2] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:39 [TestNG-PoolService-7] [DriverFactory] - config.properties file has been loaded successfully
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-9] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-4] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-7] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-8] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-3] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-6] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-2] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-1] [DriverFactory] - chrome browser has been selected
+[INFO] 23-03-2025 17:51:41 [TestNG-PoolService-5] [DriverFactory] - chrome browser has been selected
+[WARN] 23-03-2025 17:51:42 [TestNG-PoolService-4] [LoginPage] - Username field is empty
+[WARN] 23-03-2025 17:51:42 [TestNG-PoolService-6] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-1] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-4] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-6] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-1] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-4] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-4] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-6] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:42 [TestNG-PoolService-4] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:51:43 [TestNG-PoolService-1] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:43 [TestNG-PoolService-1] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:51:43 [TestNG-PoolService-1] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:43 [TestNG-PoolService-7] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:43 [TestNG-PoolService-7] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-6] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-6] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[WARN] 23-03-2025 17:51:44 [TestNG-PoolService-5] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-6] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-1] [ProductPage] - User clicked 'Cart' button, navigating to Cart Page: By.xpath: //a[contains(@class,'shopping_cart_link fa-layers')]
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-1] [ProductPage] - Added product are visible
+[WARN] 23-03-2025 17:51:44 [TestNG-PoolService-3] [LoginPage] - Username field is empty
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-9] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-5] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-8] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-2] [LoginPage] - Entered username: By.xpath: //input[@id='user-name'] into the username field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-3] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-3] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-9] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-1] [CheckoutPage] - Checkout button clicked successfully: By.xpath: //a[@class='btn_action checkout_button']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-5] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-5] [LoginPage] - Waiting for error message label to be visible: By.xpath: //h3[@data-test='error']
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-8] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-2] [LoginPage] - Entered password: By.xpath: //input[@id='password'] into the password field
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-3] [LoginPage] - Retrieved error message label: 'Epic sadface: Username is required'
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-5] [LoginPage] - Retrieved error message label: 'Epic sadface: Password is required'
+[INFO] 23-03-2025 17:51:44 [TestNG-PoolService-1] [CheckoutPage] - First Name entered: Injas
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - Last Name entered: Mahendra Berutu
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - Zip Code entered: 99999
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - User information form filled successfully.
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - Clicking the 'Continue to Checkout' button
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - 'Continue to Checkout' button clicked
+[INFO] 23-03-2025 17:51:45 [TestNG-PoolService-1] [CheckoutPage] - Checkout Overview page is visible with header: 'Checkout: Overview'
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-9] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-9] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-9] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-8] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-8] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-2] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-2] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-8] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:46 [TestNG-PoolService-2] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:49 [TestNG-PoolService-7] [LoginPage] - Clicked login button: By.xpath: //input[@id='login-button']
+[INFO] 23-03-2025 17:51:49 [TestNG-PoolService-7] [ProductPage] - Waiting for product page label to be visible: By.xpath: //div[@class='product_label']
+[INFO] 23-03-2025 17:51:49 [TestNG-PoolService-7] [ProductPage] - Retrieved product page label: 'Products'
+[INFO] 23-03-2025 17:51:49 [TestNG-PoolService-7] [ProductPage] - All products are successfully loaded and visible
