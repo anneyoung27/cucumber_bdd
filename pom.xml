@@ -14,11 +14,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <cucumber.java.version>7.21.1</cucumber.java.version>
         <cucumber.testng>7.21.1</cucumber.testng>
+        <testng-version>7.11.0</testng-version>
         <selenium.version>4.29.0</selenium.version>
         <webdriver.manager.version>5.9.3</webdriver.manager.version>
         <log4j2.version>2.24.3</log4j2.version>
         <extent.report.cucumber>1.14.0</extent.report.cucumber>
         <extent.report.version>5.1.2</extent.report.version>
+        <maven-surefire-plugin-version>3.5.2</maven-surefire-plugin-version>
+        <maven-compiler-plugin-version>3.14.0</maven-compiler-plugin-version>
+        <maven-failsafe-plugin-version>3.5.2</maven-failsafe-plugin-version>
     </properties>
 
     <dependencies>
@@ -34,6 +38,14 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>${cucumber.testng}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng-version}</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -78,5 +90,51 @@
             <version>${extent.report.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin-version}</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin-version}</version>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.5.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/TestRunner.java</include>
+                            </includes>
+                            <parallel>methods</parallel>
+                            <threadCount>4</threadCount>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

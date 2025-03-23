@@ -55,7 +55,7 @@ public class CheckoutPage extends DriverFactory {
             driver.findElement(zip_code).sendKeys(zipCode);
             log.info("Zip Code entered: {}", zipCode);
 
-            log.info("✔️ User information form filled successfully.");
+            log.info("User information form filled successfully.");
         } catch (Exception e) {
             log.error("Failed to fill user information!", e);
             throw e;
