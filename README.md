@@ -59,6 +59,10 @@ The test reports can be found in:<br />
 ```./test-output```<br />
 The report will be generated upon execution and will include screenshots if any failures occur during the testing process.
 
+### 3. Project Pipeline
+![Project Pipeline](https://github.com/user-attachments/assets/fea9fa4c-afb1-4947-b309-bfd5592960a2)
+
+
 ## Installation
 1. Clone this repository:<br />
    `git clone https://github.com/anneyoung27/selenium-web-automation.git`
