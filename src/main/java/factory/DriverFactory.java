@@ -75,7 +75,8 @@ public class DriverFactory {
     public static void tearDown() {
         if (getDriver() != null) {
             getDriver().quit();
-            driver = null;
+            // driver = null;
+            driver.remove(); // remove the driver from ThreadLocal
         }
     }
 }

@@ -16,32 +16,25 @@ public class CheckoutPage extends DriverFactory {
 
     public static Logger log = LogManager.getLogger();
 
+    // 1. Constructor of the page class
     public CheckoutPage(WebDriver driver){
         this.driver = driver;
     }
 
+    // 2. By locators
     By checkoutButton = By.xpath("//a[@class='btn_action checkout_button']");
-
     By first_name = By.xpath("(//input[@class='form_input'])[1]");
-
     By last_name = By.xpath("//input[@data-test='lastName']");
-
     By zip_code = By.xpath("//input[@data-test='postalCode']");
-
     By continueToProceedCheckoutButton = By.xpath("//input[@class='btn_primary cart_button']");
-
     By checkoutOverviewLabel = By.xpath("//div[normalize-space(text())='Checkout: Overview']");
-
     By checkoutFinishButton = By.xpath("//a[@class='btn_action cart_button']");
-
     By successMessageLabel = By.xpath("//h2[normalize-space(text())='THANK YOU FOR YOUR ORDER']");
-
     By subTotalElement = By.className("summary_subtotal_label");
-
     By taxElement = By.className("summary_tax_label");
-
     By totalValueElement = By.className("summary_total_label");
 
+    // 3. Page actions: features(behavior) of the page the form of methods
     public void clickCheckoutButton(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(setUp.getProperty("EXPLICIT_WAIT"))));
         WebElement checkoutBtn = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
