@@ -65,15 +65,11 @@ The report will be generated upon execution and will include screenshots if any 
 
 ## Installation
 1. Clone this repository:<br />
-   `git clone https://github.com/anneyoung27/selenium-web-automation.git`
-
+   `git clone https://github.com/anneyoung27/cucumber_bdd.git`
 2. Navigate to the project directory:<br />
-   `cd selenium-web-automation`
-
 3. Install dependencies using Maven:<br />
    `mvn clean install`
-
 4. Run<br />
-   `src/test/resources/runner`
+   `src/test/java/runner/ParallelRunner.xml`
 
 
